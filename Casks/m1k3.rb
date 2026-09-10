@@ -11,7 +11,7 @@ cask "m1k3" do
 
   url "https://github.com/Round-Tower/M1K3/releases/download/#{version}/M1K3.dmg"
   name "M1K3"
-  desc "Private, on-device AI for the Mac — three brains, voice, memory, and an MCP server for your coding agent"
+  desc "Private, on-device AI with voice, memory, and an MCP server for coding agents"
   homepage "https://m1k3.app/"
 
   livecheck do
@@ -19,8 +19,8 @@ cask "m1k3" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :tahoe"
   depends_on arch: :arm64
+  depends_on macos: :tahoe
 
   app "M1K3.app"
 
