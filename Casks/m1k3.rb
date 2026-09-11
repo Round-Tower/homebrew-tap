@@ -5,9 +5,14 @@
 # Signed: Kev + claude-fable-5.1, 2026-09-11, Confidence 0.8 (installed from
 # this file on the author's Mac; livecheck + zap paths verify-on-first-upgrade).
 # Prior: Unknown.
+# Review: Kev + claude-fable-5.1, 2026-09-11 — 2026.09.11 (dca2dd33) + the `binary`
+# stanza: the m1k3 CLI ships inside the bundle at Contents/Helpers from this
+# nightly on (#279, #282). Verified by an --appdir install: /opt/homebrew/bin/m1k3
+# linked, `m1k3 status` answered the running app, uninstall unlinked it cleanly.
+# Confidence now 0.85.
 cask "m1k3" do
-  version "2026.09.10"
-  sha256 "0c0fcd182339707cdf1b1aef4d8aa0ba52f695b04f82b8d1129e7dc143105bef"
+  version "2026.09.11"
+  sha256 "0a9e11cb6599eb304ce1c5339aebe8ba5d354f8743035aa9eb5e7fb156707805"
 
   url "https://github.com/Round-Tower/M1K3/releases/download/#{version}/M1K3.dmg"
   name "M1K3"
@@ -23,6 +28,7 @@ cask "m1k3" do
   depends_on macos: :tahoe
 
   app "M1K3.app"
+  binary "#{appdir}/M1K3.app/Contents/Helpers/m1k3"
 
   zap trash: [
     "~/Library/Application Scripts/app.m1k3",
