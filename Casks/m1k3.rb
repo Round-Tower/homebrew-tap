@@ -12,7 +12,7 @@
 # Confidence now 0.85.
 cask "m1k3" do
   version "2026.10.10"
-  sha256 "60e0eaf98e2f3b5199c2d2b24b5890d1a76cfcd938c970b650f3386a6ada7def"
+  sha256 "1228c2b205185fcb19a12142d7da7fa34039b45b24d26239510447de1cdabd04"
 
   url "https://github.com/Round-Tower/M1K3/releases/download/#{version}/M1K3.dmg"
   name "M1K3"
