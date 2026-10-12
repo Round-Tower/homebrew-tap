@@ -11,8 +11,8 @@
 # linked, `m1k3 status` answered the running app, uninstall unlinked it cleanly.
 # Confidence now 0.85.
 cask "m1k3" do
-  version "2026.10.11"
-  sha256 "15b44016d81463f9965132d010fc3e7433f1885c300a1881b80da0bf2241438f"
+  version "2026.10.12"
+  sha256 "9622f01410a11ed5b2302c5344459ac3aaebec61ad31ff8caaa1c47d1b6f537b"
 
   url "https://github.com/Round-Tower/M1K3/releases/download/#{version}/M1K3.dmg"
   name "M1K3"
